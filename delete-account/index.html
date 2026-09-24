@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Delete your Sprout account</title>
   <meta name="description" content="How to delete your Sprout account and data, in the app or by email, and what is deleted or kept.">
   <link rel="canonical" href="https://sprout-legal.mikrodev.net/delete-account/">
@@ -56,7 +58,7 @@
 
       <h2 id="by-email">Delete your account without the app</h2>
       <p>If you no longer have the app or can't sign in, email <a href="mailto:support-sprout@mikrodev.net?subject=Delete%20my%20Sprout%20account">support-sprout@mikrodev.net</a> from the email address on your account, with the subject "Delete my Sprout account".</p>
-      <p>To protect your account, we may ask you to confirm the request from that address. We delete the account within 30 days of confirming and email you when it's done.</p>
+      <p>To protect your account, we'll write to the email address on your account to confirm the request before we delete anything (we never act on a different reply-to address). We delete the account within 30 days of your confirmation and email you when it's done.</p>
       <p>Only want some of your data removed, such as one list or your name? Ask the same way. You can also delete lists, items and templates yourself in the app at any time.</p>
 
       <h2 id="deleted">What is deleted</h2>
@@ -76,9 +78,11 @@
           <tbody>
             <tr><td>Items you added to lists owned by other people</td><td>They belong to that shared list. Your name is removed from them.</td><td>Until the list's owner deletes them</td></tr>
             <tr><td>Templates you shared with others</td><td>They are copies the recipients now hold. They keep your name as the sender.</td><td>Until the recipients delete them</td></tr>
-            <tr><td>Billing record (account ID, email, subscription reference, deletion date)</td><td>Tax, accounting and handling payment disputes</td><td>Up to 7 years</td></tr>
+            <tr><td>Billing record, only if you ever bought Sprout Plus (account ID, email, subscription reference, deletion date)</td><td>Tax, accounting and handling payment disputes</td><td>7 years after the purchase or subscription ends</td></tr>
             <tr><td>Payment records held by Apple or Google</td><td>They sold the subscription and must keep their own records</td><td>As set by Apple's and Google's privacy policies</td></tr>
-            <tr><td>Server backups</td><td>Disaster recovery</td><td>Overwritten on a rolling basis, within 90 days</td></tr>
+            <tr><td>Server backups</td><td>Disaster recovery</td><td>Deleted within 90 days</td></tr>
+            <tr><td>Emails you sent us, and feedback form answers</td><td>Answering you and fixing problems</td><td>Until resolved, and no longer than 2 years</td></tr>
+            <tr><td>Server logs (such as IP address and request time)</td><td>Running and protecting the service</td><td>A short period, typically a few days</td></tr>
           </tbody>
         </table>
       </div>

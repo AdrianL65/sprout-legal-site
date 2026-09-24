@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Sprout privacy policy</title>
   <meta name="description" content="What data the Sprout app collects, why, who it's shared with, how long it's kept, and your choices.">
   <link rel="canonical" href="https://sprout-legal.mikrodev.net/privacy/">
@@ -57,7 +59,7 @@
 
       <h2 id="who">Who we are</h2>
       <p>Sprout is published by Adrian Lara Guzman, an individual developer in California, USA, doing business as Mikrodev ("we", "us"). We are responsible for your personal data in Sprout. You can reach us at <a href="mailto:support-sprout@mikrodev.net">support-sprout@mikrodev.net</a>.</p>
-      <p>This policy covers the Sprout apps for iPhone and Android and the websites sprout-support.mikrodev.net and sprout-legal.mikrodev.net. The websites don't use cookies, analytics or trackers.</p>
+      <p>This policy covers the Sprout apps for iPhone and Android and the websites sprout-support.mikrodev.net and sprout-legal.mikrodev.net. The websites don't use cookies, analytics or trackers. Their host, GitHub, keeps standard server logs, such as your IP address, when you visit them or open an email that shows the Sprout logo.</p>
 
       <h2 id="collect">What we collect</h2>
       <h3>Information you give us</h3>
@@ -66,7 +68,7 @@
         <li><strong>Your lists:</strong> the items, notes, categories and stores you add, whether items are on the list or ticked, who added each item, and how often an item is added (used to suggest items).</li>
         <li><strong>Sharing:</strong> which lists you own or have joined, and your family plan membership if you have one.</li>
         <li><strong>Templates:</strong> when you share a template, we store a copy of the list's shopping items, categories and stores, plus your name as the sender.</li>
-        <li><strong>Support and feedback:</strong> anything you send us by email or through the in-app feedback form (a Google Form), such as your message, screenshots, app version and phone type.</li>
+        <li><strong>Support and feedback:</strong> anything you send us by email or through the in-app feedback form (a Google Form), such as your message, screenshots, app version and platform (iPhone or Android).</li>
       </ul>
       <h3>Sprout Plus purchases</h3>
       <p>Sprout Plus is bought inside the app through the App Store or Google Play. Apple or Google takes the payment under their own privacy policies, and <strong>we never see your payment details</strong>. We use <strong>RevenueCat</strong> to check those purchases: it receives your Sprout account ID and the store's purchase receipts, and tells us which plan you have and when it renews. We store your plan, its status and dates.</p>
@@ -74,13 +76,13 @@
       <ul>
         <li><strong>Bot protection:</strong> when you sign up, sign in or reset your password, <strong>Cloudflare Turnstile</strong> checks that you're a person. It processes your IP address and technical signals from your device and browser.</li>
         <li><strong>Ads (free version only):</strong> <strong>Google AdMob</strong> collects your device's advertising ID (on iPhone only if you allow tracking), IP address, approximate location derived from it, device and app information, and how you interact with ads. See <a href="#ads">Ads and tracking</a>.</li>
-        <li><strong>Security logs:</strong> when someone enters a wrong invite code, we record the account and time to stop code guessing.</li>
+        <li><strong>Security logs:</strong> when someone enters a wrong invite code, or a wrong password when confirming a change to their account, we record the account and time to stop guessing.</li>
         <li><strong>Server logs:</strong> our hosting provider keeps standard technical logs (such as IP address and request time) for a short period to run and protect the service.</li>
       </ul>
       <h3>What we don't collect</h3>
       <p>Sprout has no analytics or crash-reporting tools and doesn't access your precise location, contacts or photos. The camera is used only to scan QR codes. The camera image is processed on your phone and never sent to us.</p>
       <h3>Stored on your phone</h3>
-      <p>Sprout keeps a copy of your lists and settings on your phone so it works offline. This stays on the device and is cleared when you sign out or delete your account.</p>
+      <p>Sprout keeps a copy of your lists and settings on your phone so it works offline. This stays on the device, isn't included in Android phone backups, and is cleared when you sign out or delete your account.</p>
 
       <h2 id="use">How we use it</h2>
       <div class="table-scroll">
@@ -91,7 +93,7 @@
             <tr><td>Send account emails (confirm your email, reset password, email changes)</td><td>Email address, name</td><td>Contract</td></tr>
             <tr><td>Sell and manage Sprout Plus</td><td>Account ID, email, plan and billing records</td><td>Contract, and legal obligations (tax, accounting, auto-renewal records)</td></tr>
             <tr><td>Keep Sprout safe from bots, abuse and code guessing</td><td>Turnstile signals, security logs, server logs</td><td>Our legitimate interest in protecting users and the service</td></tr>
-            <tr><td>Show ads in the free version</td><td>Advertising data collected by Google</td><td>Your consent where required (for example, iPhone tracking permission), otherwise legitimate interest in funding a free app</td></tr>
+            <tr><td>Show ads in the free version</td><td>Advertising data collected by Google</td><td>Your consent where the law requires it (for example, the iPhone tracking permission); otherwise our legitimate interest in funding a free app, which you can object to with the ad settings below</td></tr>
             <tr><td>Answer support requests and improve Sprout</td><td>What you send us</td><td>Legitimate interest in helping you and fixing problems</td></tr>
             <tr><td>Comply with the law and enforce our terms</td><td>Any of the above, as needed</td><td>Legal obligation, legitimate interest</td></tr>
           </tbody>
@@ -107,7 +109,7 @@
         <li><strong>Anyone with a template code</strong> can see that template's items and your name as the sender. Template codes don't expire, so only share them with people you trust. Delete a template to stop its code working.</li>
       </ul>
       <h3>Service providers</h3>
-      <p>These companies process data for us to run Sprout. We require them to protect your data with the same or equal protection as described in this policy.</p>
+      <p>These companies process data for us to run Sprout, under terms in which they commit to protect it. Google (for ads), Apple and Google Play also use data under their own privacy policies, as described below.</p>
       <div class="table-scroll">
         <table>
           <thead><tr><th>Provider</th><th>What they do</th><th>Data</th></tr></thead>
@@ -116,7 +118,8 @@
             <tr><td>RevenueCat</td><td>Checks App Store and Google Play subscriptions</td><td>Account ID, purchase receipts, plan and renewal dates</td></tr>
             <tr><td>Resend</td><td>Sends account emails</td><td>Email address, name, email content</td></tr>
             <tr><td>Cloudflare</td><td>Bot protection (Turnstile), domain and email forwarding</td><td>IP address, device and browser signals, support emails</td></tr>
-            <tr><td>Google</td><td>Ads in the free version (AdMob); feedback form (Google Forms)</td><td>Advertising data; what you type in the form</td></tr>
+            <tr><td>Google</td><td>Ads in the free version (AdMob); feedback form (Google Forms); our support inbox (Gmail)</td><td>Advertising data; what you type in the form; the emails you send us</td></tr>
+            <tr><td>GitHub</td><td>Hosts these websites and the logo shown in our emails</td><td>IP address and request details in server logs</td></tr>
             <tr><td>Apple, Google Play</td><td>App distribution and, where offered, in-app purchases</td><td>As described in their own policies</td></tr>
           </tbody>
         </table>
@@ -140,10 +143,11 @@
           <tbody>
             <tr><td>Account, lists and templates</td><td>Until you delete them or your account. Notes on items clear after each shopping trip.</td></tr>
             <tr><td>Invite and family codes</td><td>24 hours, then they stop working</td></tr>
-            <tr><td>Wrong invite code attempts</td><td>1 day</td></tr>
-            <tr><td>Billing records (account ID, email, plan, dates, payment references)</td><td>7 years after the purchase or subscription ends, for tax, accounting, disputes and California auto-renewal records</td></tr>
+            <tr><td>Wrong invite code and password attempts</td><td>1 day</td></tr>
+            <tr><td>Billing records, only if you bought Sprout Plus (account ID, email, plan, dates, payment references)</td><td>7 years after the purchase or subscription ends, for tax, accounting, disputes and California auto-renewal records</td></tr>
             <tr><td>Support emails and feedback forms</td><td>Until the issue is resolved, and no longer than 2 years</td></tr>
             <tr><td>Backups</td><td>Deleted within 90 days</td></tr>
+            <tr><td>Server logs</td><td>A short period, typically a few days</td></tr>
           </tbody>
         </table>
       </div>
@@ -153,14 +157,14 @@
       <ul>
         <li><strong>See and edit:</strong> your lists are always visible in the app. Change your name, email or password under Account in the app.</li>
         <li><strong>Delete:</strong> delete items, lists and templates anytime, or delete your whole account in the app (Account, Delete account). You can also <a href="/delete-account/">ask us by email</a>. Deleting your account does not cancel a Sprout Plus subscription; cancel it in your Apple or Google account settings.</li>
-        <li><strong>Get a copy:</strong> email us and we'll send you a copy of your personal data.</li>
+        <li><strong>Get a copy:</strong> email us and we'll send a copy of your personal data to the email address on your account.</li>
         <li><strong>Object or withdraw consent:</strong> use the ad settings above, or email us.</li>
       </ul>
-      <p>We answer requests within 30 days (45 days where a state law allows it). We may need to confirm the request came from your account's email address. We won't treat you differently for using your rights.</p>
+      <p>We answer requests within 30 days (45 days where a state law allows it). To protect your account, we confirm every request by writing to the email address on your account before we act on it; we never act on, or send data to, a different reply-to address. We won't treat you differently for using your rights.</p>
 
       <h2 id="children">Children</h2>
       <p>Sprout is a general-audience app and is not directed to children under 13. We do not knowingly collect personal information from children under 13 (or under the minimum age in your country). If we learn that we have, we will delete it. Parents or guardians who believe their child has an account can contact <a href="mailto:support-sprout@mikrodev.net">support-sprout@mikrodev.net</a>.</p>
-      <p>Some app stores may give us an age range for your account. If they do, we use it only to give an age-appropriate experience and to comply with the law.</p>
+      <p>If an app store gives us an age range for your account, we will use it only to give an age-appropriate experience and to comply with the law. Creating an account asks you to confirm you are 13 or older.</p>
 
       <h2 id="where">Where data is stored</h2>
       <p>Sprout's data is stored and processed in the United States. If you use Sprout from another country, your data is transferred to the US. Where the law requires it, we rely on safeguards such as our providers' standard contractual clauses and the EU-US Data Privacy Framework.</p>
@@ -170,7 +174,7 @@
 
       <h2 id="regions">State and country notes</h2>
       <h3>California and other US states</h3>
-      <p>We don't sell personal information and don't share it for money. Google's use of advertising data in the free version may count as "sharing" for targeted advertising under some state laws. You can opt out using the ad settings described above, or by using Sprout Plus. California residents may ask what personal information we collected in the past 12 months, and ask us to correct or delete it, by emailing us. You may use an authorized agent.</p>
+      <p>We don't sell personal information and don't share it for money. Google's use of advertising data in the free version may count as "sharing" for targeted advertising under some state laws. You can opt out of it with the ad settings described above; you never need to pay to opt out. California residents may ask what personal information we have collected about them, and ask us to correct or delete it, by emailing us; we confirm the request through the email address on the account. You may use an authorized agent.</p>
       <h3>Mexico</h3>
       <p>You can exercise your rights of access, rectification, cancellation and opposition (ARCO rights) and revoke consent by emailing <a href="mailto:support-sprout@mikrodev.net">support-sprout@mikrodev.net</a> with your name, the email on your account, and what you are asking for. We will reply within 20 business days.</p>
       <h3>European Economic Area, United Kingdom and Switzerland</h3>
